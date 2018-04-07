@@ -1,0 +1,204 @@
+@font-face {
+  font-family: MetropolisLight;
+  src: url(../fonts/Metropolis-Light.otf);
+}
+
+@font-face {
+  font-family: VarelaRoundRegular;
+  src: url(../fonts/VarelaRound-Regular.otf);
+}
+
+@font-face {
+  font-family: NumansRegular;
+  src: url(../fonts/Numans-Regular.otf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  background-color: #3498db;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+#container {
+  max-width: 725px;
+  margin: 0 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-weight: 100;
+  margin: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.metropolis {
+  font-family: MetropolisLight;
+}
+
+.varela {
+  font-family: VarelaRoundRegular;
+}
+
+.numans {
+  font-family: NumansRegular;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h2 {
+  font-size: 175%;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 175%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 4px solid #fff;
+}
+
+#header-img {
+  width: 80px;
+}
+
+#header-text {
+  color: #fff;
+  text-align: end;
+}
+
+main {
+  padding-bottom: 30px;
+}
+
+#main-img {
+  margin: 30px 0 15px 0;
+  height: 425px;
+}
+
+.section-text {
+  color: #fff;
+  margin: 7.5px 0 10px 20px;
+}
+
+.section-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+figure {
+  margin: 0 auto;
+  padding: 0 25px;
+  text-align: center;
+  overflow: hidden;
+}
+
+figure img {
+  height: 175px;
+  width: auto;
+}
+
+figure h2 {
+  margin: 10px 0 4px 0;
+}
+
+p {
+  font-family: NumansRegular;
+  font-size: 80%;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 775px) {
+  #container {
+    max-width: 475px !important;
+  }
+  h1 {
+    font-size: 200%;
+  }
+  h4 {
+    font-size: 80%;
+  }
+  figure {
+    padding: 0 12.5px;
+  }
+  figure img {
+    height: 120px;
+    width: auto;
+  }
+  p {
+    font-size: 70%;
+    word-wrap: break-word;
+  }
+}
+
+@media (max-width: 525px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  #container {
+    max-width: 325px !important;
+  }
+  header {
+    padding: 15px 0;
+  }
+  h1 {
+    font-size: 135%;
+  }
+  h2 {
+    font-size: 125%;
+  }
+  h3 {
+    font-size: 135%;
+  }
+  h4 {
+    font-size: 75%;
+  }
+  p {
+    font-size: 70%;
+  }
+  #header-img {
+    width: 50px;
+  }
+  #main-img {
+    height: auto;
+  }
+  .section-row {
+    flex-wrap: wrap;
+  }
+  .section-text {
+    text-align: center;
+    margin: 7.5px 0 10px 0;
+  }
+  figure {
+    padding: 15px 12.5px;
+  }
+  figure h2 {
+    margin: 4px 0;
+  }
+}
